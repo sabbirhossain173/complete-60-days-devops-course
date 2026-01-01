@@ -104,12 +104,19 @@ You’ll see something like:
 ```
 Let’s break it down:
 ```sh
- -rwxr-xr--
- │ │ |  │ 
- │ │ │  └── Other (Everyone else)
- │ │ └──── Group
- │ └─────── Owner (User)
- └───────── File type
+-rwxr-xr--
+││││││││││
+│││││││││└─ Others: execute
+││││││││└── Others: write
+│││││││└─── Others: read
+││││││└────── Group: execute
+│││││└─────── Group: write
+││││└──────── Group: read
+│││└──────────── Owner: execute
+││└───────────── Owner: write
+│└────────────── Owner: read
+└────────────────── File type
+
 ```
 🧩 Explanation:
 | Symbol | Meaning                              |
