@@ -35,6 +35,7 @@ cd /etc      # Change directory
 cd ~         # Go back to home
 mkdir test   # Make directory
 touch file1  # Create a file
+nano file2   # 1. Open/Create a File: nano filename.txt. 2. Type: Start typing your text. 3. Save: Press Ctrl + O (Write Out), then press Enter to confirm the filename. 4. Exit: Press Ctrl + X to quit; it will prompt you to save if changes aren't saved.Search: Press Ctrl + W to find text. 
 rm file1     # Remove file
 rmdir test   # Remove directory
 ```
