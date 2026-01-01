@@ -72,6 +72,17 @@ sudo userdel -r <username>
 sudo deluser --remove-home <username> (on Debian/Ubuntu)
 ```
 
+### Octal Notation (755) for file permissions
+
+```angular2html
+User-Category 	   Digit	   Numeric-Value	               Symbolic-Representation	Permissions
+
+Owner   	      7     4 (read) + 2 (write) + 1 (execute)	           rwx	               Read, Write, and Execute
+Group   	      5     4 (read) + 1 (execute)	                   r-x                 Read and Execute (no write)
+Others  	      5     4 (read) + 1 (execute)	                   r-x	               Read and Execute (no write)
+
+```
+
 ### Hands-On: File Permissions & Ownership
 ```sh
 ls -l file.txt              # See permissions
