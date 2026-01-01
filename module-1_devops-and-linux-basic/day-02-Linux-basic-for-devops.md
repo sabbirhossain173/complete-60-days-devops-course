@@ -57,6 +57,20 @@ su - dhaka
 sudo apt update
 ```
 
+### Standard User Deletion
+The basic command removes the user account and their entry from system files, but by default, it leaves their home directory and mail spool intact.
+```sh
+sudo userdel <username>
+sudo deluser <username> (on Debian/Ubuntu)
+```
+
+
+Deleting the User and Their Home Directory: This is the most common and recommended approach for a complete removal, as it deletes the user's home folder and mail spool along with the account.
+```sh
+sudo userdel -r <username>
+sudo deluser --remove-home <username> (on Debian/Ubuntu)
+```
+
 ### Hands-On: File Permissions & Ownership
 ```sh
 ls -l file.txt              # See permissions
