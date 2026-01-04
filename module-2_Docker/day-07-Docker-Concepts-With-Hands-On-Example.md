@@ -21,8 +21,16 @@ Docker Compose
 Volumes
  - For persistent storage
 
-Networking
- - Bridge, host, none, and custom networks
+7️⃣ Networking (Docker containers need to communicate)
+ There are different network types:
+
+- bridge (default): Containers get their own private network, can talk to each other.
+
+- host: Container shares the host machine’s network. Fast, but less isolated.
+
+- none: No network for container. Totally isolated.
+
+- custom networks: You can create your own network to control communication rules.
 
 ## 🛠 Hands-On Demo Structure (Beginner Friendly)
 
