@@ -6,8 +6,8 @@ What is Docker?
  - A platform for developing, shipping, and running applications inside lightweight containers.
 
 Image vs Container
- - Image: Blueprint
- - Container: Running instance of an image
+ - Image: A Docker image is a read-only template or a blueprint that contains all the instructions, application code, a runtime, system tools, libraries, and settings needed to run an application in a Docker container.
+ - Container: Container is runnable instance of a Docker image.
 
 Dockerfile
  - Instructions to build an image

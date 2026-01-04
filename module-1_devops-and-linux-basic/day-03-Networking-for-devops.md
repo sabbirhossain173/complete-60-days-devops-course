@@ -5,7 +5,7 @@ Networking is the backbone of communication between servers, services, and users
 
 Common Terms:
  - IP Address – Unique identifier for a device on a network.
- - DNS – Translates domain names to IP addresses.
+ - DNS – Translates domain names to IP addresses. (DNS (Domain Name System) is the internet's phonebook, translating human-readable domain names (like google.com) into machine-readable IP addresses (like 142.250.186.46), allowing browsers to find and connect to websites.)
  - Port – Logical endpoint for communication (e.g., port 80 for HTTP).
  - Ping – Tests network connectivity to a host.
  - Traceroute – Shows the path packets take to a host.
