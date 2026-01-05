@@ -69,7 +69,7 @@ ansible -i inventory.ini webservers -m apt -a "name=apache2 state=present update
 ```sh
 ansible -i inventory.ini webservers -m service -a "name=apache2 state=started" -b
 ```
-✅ Copy an index.html
+✅ Copy an index.html (local file) into remote
 ```sh
 ansible -i inventory.ini webservers -m copy -a "src=./index.html dest=/var/www/html/index.html" -b
 ```
