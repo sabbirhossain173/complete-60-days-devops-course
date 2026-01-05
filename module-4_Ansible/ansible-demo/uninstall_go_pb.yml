@@ -1,0 +1,6 @@
+- name: Uninstall Go lang
+  hosts: webservers
+  roles:
+   - role: go_role
+     vars:
+        go_state: absent

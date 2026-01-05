@@ -1,0 +1,7 @@
+- name: "{{ 'Install Go lang on ubuntu VM()' if go_state == 'present' else 'Uninstall Go lang on ubuntu VM()' }}"
+  apt: 
+    name: "{{ go_package_name }}"
+    state: "{{ go_state }}"
+    update-cache: yes
+  become: yes
+  
