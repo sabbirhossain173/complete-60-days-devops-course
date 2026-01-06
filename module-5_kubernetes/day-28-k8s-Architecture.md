@@ -24,6 +24,53 @@ Kubernetes, often abbreviated as K8s, is an open-source system designed to autom
 Step 1: Start Minikube (Download minikube first, then install the minikube binary, and check docker as well)
 ```sh
 minikube start
+
+```
+
+### What happens after running the command?
+```angular2html
+✅ What Just Happened (লাইন-বাই-লাইন ব্যাখ্যা)
+😄 minikube v1.37.0 on Ubuntu 24.04
+
+Minikube version OK
+
+OS supported
+
+✨ Automatically selected the docker driver
+
+Minikube বুঝে নিয়েছে Docker আছে
+
+VM না বানিয়ে Docker container এর ভেতরেই Kubernetes চালাচ্ছে
+
+👉 Fast + Lightweight
+
+🔥 Creating docker container (CPUs=2, Memory=16000MB)
+
+Kubernetes node তৈরি হয়েছে একটি Docker container হিসেবে
+
+2 CPU + 16GB RAM allocate করা হয়েছে
+
+🐳 Preparing Kubernetes v1.34.0
+
+Kubernetes cluster version = 1.34.0
+
+Control Plane + Worker Node একসাথে
+
+🔗 Configuring bridge CNI
+
+Pod-to-Pod networking setup
+
+Container Network Interface (CNI)
+
+👉 এই অংশটা Kubernetes networking এর backbone
+
+🌟 Enabled addons
+
+storage-provisioner
+
+default-storageclass
+
+👉 এখন তুমি PVC (Persistent Volume Claim) ব্যবহার করতে পারবে
 ```
 Step 2: Check Cluster Info
 
