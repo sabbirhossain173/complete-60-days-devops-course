@@ -21,7 +21,7 @@ Kubernetes, often abbreviated as K8s, is an open-source system designed to autom
 ![Diagram](https://github.com/rajivsiddiqui/image-use/blob/main/k8s-architecture.png) 
 
 ### 📌 3. Hands-On Demo with Minikube 
-Step 1: Start Minikube
+Step 1: Start Minikube (Download minikube first, then install the minikube binary, and check docker as well)
 ```sh
 minikube start
 ```
